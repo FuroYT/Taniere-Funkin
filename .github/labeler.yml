@@ -1,0 +1,13 @@
+'pr: state':
+- changed-files:
+  - any-glob-to-any-file:
+      - data/states/*
+
+'pr: haxe':
+- changed-files:
+  - any-glob-to-any-file: '**/*.hx'
+
+'pr: song':
+- changed-files:
+  - any-glob-to-any-file:
+      - songs/*
