@@ -4,43 +4,58 @@ import funkin.backend.assets.ModsFolder;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
 import openfl.text.TextFieldAutoSize;
+import openfl.display.Bitmap;
+import openfl.display.BitmapData;
 using StringTools;
 
 var devOverlay;
+var devOverlayBg;
 function initDevOverlay()
 {
-    if (devOverlay != null) return;
-    devOverlay = new TextField();
-    devOverlay.x = 10;
+    if (devOverlayBg == null)
+    {
+        devOverlayBg = new Bitmap(new BitmapData(1, 1, true, 0xFF000000));
+		devOverlayBg.alpha = 0.7;
+        devOverlayBg.x = 10;
+        window.stage.addChild(devOverlayBg);
+    }
+    if (devOverlay == null) {
+        devOverlay = new TextField();
+        devOverlay.x = 18;
 
-    devOverlay.selectable = false;
-    devOverlay.mouseEnabled = false;
-    devOverlay.defaultTextFormat = new TextFormat("_sans", 24, 0x9E9191);
-    devOverlay.autoSize = TextFieldAutoSize.LEFT;
-    devOverlay.multiline = false;
-    devOverlay.text = "";
-    window.stage.addChild(devOverlay);
+        devOverlay.selectable = false;
+        devOverlay.mouseEnabled = false;
+        devOverlay.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font("vcr.ttf")), 24, 0xFFFFFF);
+        devOverlay.autoSize = TextFieldAutoSize.LEFT;
+        devOverlay.multiline = false;
+        devOverlay.text = "";
+        window.stage.addChild(devOverlay);
+    }
 }
 
 function update(elapsed:Float) {
-    if (devOverlay != null) devOverlay.y = window.height - 100;
+    if (devOverlay != null) devOverlay.y = window.height - (devOverlay.height + 14);
+    if (devOverlayBg != null) devOverlayBg.y = window.height - (devOverlayBg.height + 10);
 }
 
 static function updateDevOverlay() {
-    if (devOverlay == null) return;
     var debugText = [
         "Tanière Funkin' Dev Build",
-        "Git: " + gitCommitHash + " / " + gitCommitAuthor + ": " + gitCommitMessage,
-        DiscordUtil.user == null ? null : "Discord: " + DiscordUtil.user.username + " (" + DiscordUtil.user.userId + ")",
+        gitCommitHash + " (" + gitBranch + ")",
+        gitCommitAuthor + ": " + gitCommitMessage,
     ];
-    devOverlay.text = debugText.filter((v) -> v != null).join("\n");
+    if (devOverlay != null)
+        devOverlay.text = debugText.join("\n");
+
+    devOverlayBg.scaleX = devOverlay.width + devOverlay.x;
+    devOverlayBg.scaleY = devOverlay.height + 8;
 }
 
 function destroy()
 {
-    if (devOverlay != null) {
-        window.stage.removeChild(devOverlay);
-    }
+    for (stageObj in [devOverlayBg, devOverlay])
+        if (stageObj != null)
+            window.stage.removeChild(stageObj);
 }
 function new()
 {
@@ -94,6 +109,11 @@ static var gitCommitModified(get, default):Bool;
 function get_gitCommitModified():String {
     var exit:String = doGitCommand(['status', '--porcelain']) ?? "";
     return exit != "";
+}
+static var gitBranch(get, default):String;
+function get_gitBranch():String {
+    var curBranch:String = doGitCommand(["rev-parse", "--abbrev-ref", "HEAD"]) ?? "";
+    return curBranch;
 }
 
 function postStateSwitch() {
