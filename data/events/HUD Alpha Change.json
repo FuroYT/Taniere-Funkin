@@ -1,0 +1,34 @@
+{
+	"params": [
+        {
+            "name": "Alpha",
+            "type": "Float(0, 1, 0.01, 2)",
+            "defaultValue": 1
+        },
+        {
+            "name": "Notes Too?",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "Tween Alpha?",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "Tween Time (Steps)",
+            "type": "Float(0.25, 9999, 0.25, 2)",
+            "defaultValue": 4
+        },
+        {
+            "name": "Tween Ease (ex: circ, quad, cube)",
+            "type": "DropDown('linear', 'back', 'bounce', 'circ', 'cube', 'sine', 'quint', 'quart', 'quad', 'expo', 'elastic')",
+            "defaultValue": "linear"
+        },
+        {
+            "name": "Tween Type (excluded if linear, ex: InOut)",
+            "type": "DropDown('In', 'Out', 'InOut')",
+            "defaultValue": "In"
+        }
+	]
+}

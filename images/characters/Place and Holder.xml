@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Place and Holder.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="7" y="7" width="702" height="400"/>
+	<SubTexture name="idle0001" x="7" y="7" width="702" height="400"/>
+	<SubTexture name="idle0002" x="7" y="7" width="702" height="400"/>
+	<SubTexture name="idle0003" x="713" y="7" width="702" height="400"/>
+	<SubTexture name="idle0004" x="713" y="7" width="702" height="400"/>
+	<SubTexture name="idle0005" x="713" y="7" width="702" height="400"/>
+	<SubTexture name="singDOWN0000" x="7" y="411" width="702" height="400"/>
+	<SubTexture name="singDOWN0001" x="7" y="411" width="702" height="400"/>
+	<SubTexture name="singDOWN0002" x="7" y="411" width="702" height="400"/>
+	<SubTexture name="singDOWN0003" x="713" y="411" width="702" height="400"/>
+	<SubTexture name="singDOWN0004" x="713" y="411" width="702" height="400"/>
+	<SubTexture name="singDOWN0005" x="713" y="411" width="702" height="400"/>
+	<SubTexture name="singLEFT0000" x="7" y="815" width="702" height="400"/>
+	<SubTexture name="singLEFT0001" x="7" y="815" width="702" height="400"/>
+	<SubTexture name="singLEFT0002" x="7" y="815" width="702" height="400"/>
+	<SubTexture name="singLEFT0003" x="713" y="815" width="702" height="400"/>
+	<SubTexture name="singLEFT0004" x="713" y="815" width="702" height="400"/>
+	<SubTexture name="singLEFT0005" x="713" y="815" width="702" height="400"/>
+	<SubTexture name="singRIGHT0000" x="7" y="1219" width="702" height="400"/>
+	<SubTexture name="singRIGHT0001" x="7" y="1219" width="702" height="400"/>
+	<SubTexture name="singRIGHT0002" x="7" y="1219" width="702" height="400"/>
+	<SubTexture name="singRIGHT0003" x="713" y="1219" width="702" height="400"/>
+	<SubTexture name="singRIGHT0004" x="713" y="1219" width="702" height="400"/>
+	<SubTexture name="singRIGHT0005" x="713" y="1219" width="702" height="400"/>
+	<SubTexture name="singUP0000" x="7" y="1623" width="702" height="400"/>
+	<SubTexture name="singUP0001" x="7" y="1623" width="702" height="400"/>
+	<SubTexture name="singUP0002" x="7" y="1623" width="702" height="400"/>
+	<SubTexture name="singUP0003" x="713" y="1623" width="702" height="400"/>
+	<SubTexture name="singUP0004" x="713" y="1623" width="702" height="400"/>
+	<SubTexture name="singUP0005" x="713" y="1623" width="702" height="400"/>
+</TextureAtlas>

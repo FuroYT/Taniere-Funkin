@@ -1,0 +1,24 @@
+{
+    "params": [
+        {
+            "name": "Eanabled",
+            "type": "Bool",
+            "defaultValue": false
+        },
+        {
+            "name": "Beats",
+            "type": "Float(0.0, 9999, 1, 2)",
+            "defaultValue": "0"
+        },
+        {
+            "name": "Value CamGame",
+            "type": "Float(0.0, 9999, 1, 2)",
+            "defaultValue": "0"
+        },
+        {
+            "name": "Value CamHUD",
+            "type": "Float(0.0, 9999, 1, 2)",
+            "defaultValue": "0"
+        }
+    ]
+}

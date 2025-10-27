@@ -1,0 +1,19 @@
+{
+	"params": [
+        {
+            "name": "Camera Speed",
+            "type": "Float(0, 9999, 0.001, 3)",
+            "defaultValue": 1
+        },
+        {
+            "name": "Movement",
+            "type": "Float(0, 9999, 0.001, 3)",
+            "defaultValue": 0
+        },
+        {
+            "name": "Angle",
+            "type": "Float(0, 9999, 0.001, 3)",
+            "defaultValue": 0
+        }
+	]
+}

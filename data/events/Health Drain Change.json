@@ -1,0 +1,14 @@
+{
+	"params": [
+        {
+            "name": "Amount",
+            "type": "Float(0, 0.5, 0.01, 3)",
+            "defaultValue": 0
+        },
+        {
+            "name": "Can Die?",
+            "type": "Bool",
+            "defaultValue": false
+        }
+	]
+}

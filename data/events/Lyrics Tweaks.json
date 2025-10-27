@@ -1,0 +1,34 @@
+{
+	"params": [
+        {
+            "name": "Size",
+            "type": "Float(1, 128, 0.01, 2)",
+            "defaultValue": 24
+        },
+        {
+            "name": "Font",
+            "type": "String",
+            "defaultValue": "vcr"
+        },
+        {
+            "name": "Color",
+            "type": "ColorWheel",
+            "defaultValue": "#FFFFFF"
+        },
+        {
+            "name": "Border Size",
+            "type": "Float(1, 64, 0.01, 2)",
+            "defaultValue": 2
+        },
+        {
+            "name": "Border Color",
+            "type": "ColorWheel",
+            "defaultValue": "#000000"
+        },
+        {
+            "name": "Show Previous?",
+            "type": "Bool",
+            "defaultValue": true
+        }
+	]
+}
