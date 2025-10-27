@@ -1,0 +1,15 @@
+{
+	"customValues": {},
+	"color": "#9271FD",
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"Normal"
+	],
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Place and holder",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 96
+}
