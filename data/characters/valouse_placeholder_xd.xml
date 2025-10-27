@@ -1,8 +1,8 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="Place and Holder" scale="1.5" icon="valouse_placeholder_xd">
-	<anim name="idle" anim="idle" fps="12"/>
-	<anim name="singDOWN" anim="singDOWN" x="-25" y="-5" fps="12"/>
-	<anim name="singRIGHT" anim="singRIGHT" x="-410" y="-30" fps="12"/>
-	<anim name="singLEFT" anim="singLEFT" x="110" y="-70" fps="12"/>
-	<anim name="singUP" anim="singUP" y="20" fps="12"/>
+<character sprite="Place and Holder" scale="1.5">
+	<anim name="idle" anim="idle" fps="12" loop="true"/>
+	<anim name="singDOWN" anim="singDOWN" x="5" y="-115"/>
+	<anim name="singRIGHT" anim="singRIGHT" x="-280" y="-30"/>
+	<anim name="singLEFT" anim="singLEFT" x="195" y="-70"/>
+	<anim name="singUP" anim="singUP" x="25" y="95"/>
 </character>
