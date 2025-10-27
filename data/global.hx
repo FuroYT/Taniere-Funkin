@@ -36,6 +36,13 @@ function initDevOverlay()
 function update(elapsed:Float) {
     if (devOverlay != null) devOverlay.y = window.height - (devOverlay.height + 14);
     if (devOverlayBg != null) devOverlayBg.y = window.height - (devOverlayBg.height + 10);
+
+    if (FlxG.keys.justPressed.F7) {
+		FlxG.bitmap.clearCache();
+		FlxG.bitmap._cache.clear();
+		Paths.tempFramesCache.clear();
+		FlxG.resetState();
+	}
 }
 
 static function updateDevOverlay() {
