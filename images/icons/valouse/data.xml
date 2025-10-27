@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-icon>
+<icon scale="1" facing="left" antialiasing="true" offsetX="-20" offsetY="50">
+    <anim name="neutral" anim="normal" looped="true" offsetY="-15" fps="6"/>
+    <anim name="losing" anim="lose" looped="true" offsetY="-15" fps="6"/>
+</icon>

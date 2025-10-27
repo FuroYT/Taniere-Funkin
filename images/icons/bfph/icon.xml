@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bfph-icon.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="normal0000" x="150" y="68" width="112" height="73" frameX="-61" frameY="-99" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="normal0001" x="0" y="150" width="110" height="73" frameX="-62" frameY="-99" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="normal0002" x="110" y="150" width="111" height="69" frameX="-58" frameY="-100" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="lose0000" x="0" y="0" width="150" height="74" frameX="-23" frameY="-97" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="lose0001" x="150" y="0" width="140" height="68" frameX="-28" frameY="-102" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="lose0002" x="0" y="74" width="141" height="76" frameX="-24" frameY="-92" frameWidth="188" frameHeight="176"/>
+</TextureAtlas>

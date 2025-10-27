@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="Place and Holder" scale="1.5">
+<character sprite="Place and Holder" scale="1.5" icon="valousexe" color="#000000">
 	<anim name="idle" anim="idle" fps="12" loop="true"/>
 	<anim name="singDOWN" anim="singDOWN" x="5" y="-115"/>
 	<anim name="singRIGHT" anim="singRIGHT" x="-280" y="-30"/>

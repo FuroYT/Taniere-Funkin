@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="valousexe-icon.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="normal0000" x="157" y="152" width="104" height="97" frameX="-55" frameY="-67" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="normal0001" x="311" y="95" width="100" height="91" frameX="-55" frameY="-68" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="normal0002" x="311" y="0" width="106" height="95" frameX="-53" frameY="-67" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="lose0000" x="163" y="0" width="148" height="140" frameX="-9" frameY="-13" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="lose0001" x="0" y="0" width="163" height="152" frameX="2" frameY="-6" frameWidth="188" frameHeight="176"/>
+	<SubTexture name="lose0002" x="0" y="152" width="157" height="110" frameX="-3" frameY="-26" frameWidth="188" frameHeight="176"/>
+</TextureAtlas>
