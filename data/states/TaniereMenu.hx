@@ -1,10 +1,10 @@
+import funkin.backend.MusicBeatState;
+import funkin.backend.utils.CoolUtil.CoolSfx;
 import funkin.editors.EditorPicker;
 import funkin.menus.ModSwitchMenu;
-import funkin.menus.credits.CreditsMain;
 import funkin.menus.StoryMenuState;
+import funkin.menus.credits.CreditsMain;
 import funkin.options.OptionsMenu;
-import funkin.backend.utils.CoolUtil.CoolSfx;
-import funkin.backend.MusicBeatState;
 
 var sideBar;
 var menuItems = ["Story Mode", "Freeplay", "Credits", "Options"];
@@ -96,6 +96,11 @@ function update(elapsed:Float) {
 	if (controls.BACK) {
 		FlxG.switchState(new TitleState());
 		CoolUtil.playMenuSFX(CoolSfx.CANCEL);
+	}
+
+	if (FlxG.keys.justPressed.Y)
+	{
+		FlxG.switchState(new ModState("YasMode"));
 	}
 
 	if (controls.ACCEPT) {
