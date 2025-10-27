@@ -1,0 +1,17 @@
+{
+	"customValues": {},
+	"color": "#FFFFFF",
+	"opponentModeAllowed": true,
+	"icon": "face",
+	"difficulties": [
+		"hard",
+		"normal",
+		"easy"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Lache Ca",
+	"needsVoices": false,
+	"beatsPerMeasure": 4,
+	"bpm": 120
+}
