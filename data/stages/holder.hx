@@ -34,7 +34,7 @@ function onCameraMove() {
 
 function postCreate(){
 
-    floor = new FunkinSprite(0, 0).loadGraphic(Paths.image('stages/fuck/sol'));
+    floor = new FunkinSprite(0, 0).loadGraphic(Paths.image('stages/sol'));
     floor.origin.y = 0;
     floor.y = 900;
     floor.x = -520;
