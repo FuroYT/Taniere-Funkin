@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/holder/" name="holder" zoom="0.49" startCamPosY="600" startCamPosX="1000">
+	<combo/>
+
+	<solid x="-1600" y="-600" width="7560" color="0xFFFFFF" height="7440" name="black">
+		<property type="float" value="0" name="scrollFactor.x"/>
+		<property type="float" value="0" name="scrollFactor.y"/>
+
+	</solid>
+
+	<dad x="268" y="556"/>
+	<boyfriend x="1426" y="528"/>
+
+</stage>
