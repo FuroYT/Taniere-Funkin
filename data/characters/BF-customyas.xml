@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character y="250" sprite="BFcustomyas" flipX="true" isPlayer="true" icon="BF" color="#4A4CFD">
+	<anim name="idle" anim="BF Idle"/>
+	<anim name="singDOWN" anim="BF Down"/>
+	<anim name="singRIGHT" anim="BF Right"/>
+	<anim name="singLEFT" anim="BF Left"/>
+	<anim name="singUP" anim="BF Up"/>
+</character>
