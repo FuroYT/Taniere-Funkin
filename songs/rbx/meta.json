@@ -1,0 +1,15 @@
+{
+	"customValues": {},
+	"color": "#FFFFFF",
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"normal"
+	],
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "RBX",
+	"needsVoices": false,
+	"beatsPerMeasure": 4,
+	"bpm": 131
+}

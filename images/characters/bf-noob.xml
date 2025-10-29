@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bf-noob.png">
+<SubTexture name="idle0000" x="0" y="0" width="221" height="277" frameX="-95" frameY="-76" frameWidth="403" frameHeight="419" />
+<SubTexture name="left0000" x="0" y="277" width="204" height="271" frameX="-82" frameY="-87" frameWidth="403" frameHeight="419" />
+<SubTexture name="left0001" x="620" y="0" width="209" height="270" frameX="-85" frameY="-86" frameWidth="403" frameHeight="419" />
+<SubTexture name="down0000" x="416" y="277" width="203" height="253" frameX="-93" frameY="-107" frameWidth="403" frameHeight="419" />
+<SubTexture name="down0001" x="620" y="270" width="207" height="254" frameX="-87" frameY="-106" frameWidth="403" frameHeight="419" />
+<SubTexture name="up0000" x="420" y="0" width="200" height="276" frameX="-108" frameY="-78" frameWidth="403" frameHeight="419" />
+<SubTexture name="up0001" x="221" y="0" width="199" height="277" frameX="-108" frameY="-79" frameWidth="403" frameHeight="419" />
+<SubTexture name="right0000" x="204" y="277" width="212" height="271" frameX="-120" frameY="-91" frameWidth="403" frameHeight="419" />
+<SubTexture name="right0001" x="0" y="548" width="213" height="268" frameX="-109" frameY="-90" frameWidth="403" frameHeight="419" />
+</TextureAtlas>
