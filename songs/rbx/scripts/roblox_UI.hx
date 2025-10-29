@@ -1,5 +1,7 @@
 camGameZoomMult = camHUDZoomMult = 0;
 
+//PauseSubState.script = 'data/scripts/bloxpause';
+
 function onCountdown(e) e.cancel();
 
 function postCreate() {
