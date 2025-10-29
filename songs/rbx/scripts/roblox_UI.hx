@@ -1,13 +1,12 @@
 camGameZoomMult = camHUDZoomMult = 0;
 
-//PauseSubState.script = 'data/scripts/bloxpause';
+GameOverSubstate.script = 'data/scripts/deathrblx';
 
+introLength = 2;
 function onCountdown(e) e.cancel();
 
 function postCreate() {
     for (e in [healthBarBG, iconP1, iconP2, scoreTxt, missesTxt, accuracyTxt, comboGroup, splashHandler]) e.kill();
-    
-    //downscroll = false;
 
     healthBar.screenCenter(FlxAxes.Y);
     healthBar.y += (downscroll) ? 11 : -11;
@@ -44,4 +43,17 @@ function onSongStart() {
     new FlxTimer().start(3, ()->{
         whiteBG.visible = whiteTxt.visible = false;
     });
+}
+
+public var camMove:Int = 5;
+function postUpdate(e:Float) {
+    if (curCameraTarget >= 0) {
+        final char = strumLines.members[curCameraTarget]?.characters[0]?.getAnimName();
+        if (char != null) switch(char.split('-')[0]) {
+            case 'singLEFT': camFollow.x -= camMove;
+            case 'singDOWN': camFollow.y += camMove;
+            case 'singUP': camFollow.y -= camMove;
+            case 'singRIGHT': camFollow.x += camMove;
+        }
+    }
 }
