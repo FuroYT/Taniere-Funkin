@@ -1,0 +1,15 @@
+{
+	"customValues": {},
+	"color": "#871818",
+	"opponentModeAllowed": false,
+	"icon": "rblx",
+	"difficulties": [
+		"normal"
+	],
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "bloxxed",
+	"needsVoices": false,
+	"beatsPerMeasure": 4,
+	"bpm": 131
+}
