@@ -1,6 +1,7 @@
 camGameZoomMult = camHUDZoomMult = 0;
 
 GameOverSubstate.script = 'data/scripts/deathrblx';
+PauseSubState.script = 'data/scripts/pauserblx';
 
 introLength = 2;
 function onCountdown(e) e.cancel();
@@ -18,21 +19,26 @@ function postCreate() {
     healTxt.x = 1025;
     healTxt.screenCenter(FlxAxes.Y);
     
-    add(whiteBG = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, 0x69FFFFFF));
+    add(whiteBG = new FunkinSprite().makeSolid(960, FlxG.height, 0x69FFFFFF));
+    whiteBG.screenCenter();
 
-    add(whiteTxt = new FunkinText(0, 0, FlxG.width, "rbx by dislamp", 22));
+    add(whiteTxt = new FunkinText(0, 0, FlxG.width, "bloxxed by dislamp", 22));
     whiteTxt.alignment = "center";
     whiteTxt.font = Paths.font("ComicNeue-Bold.ttf");
     whiteTxt.screenCenter(FlxAxes.Y);
     
     whiteBG.visible = whiteTxt.visible = false;
+    for (a in [healTxt, whiteBG, whiteTxt]) a.camera = camHUD;
 
     add(blackBar1 = new FunkinSprite().makeSolid(160, FlxG.height, FlxColor.BLACK));
 
     add(blackBar2 = new FunkinSprite().makeSolid(160, FlxG.height, FlxColor.BLACK));
     blackBar2.x = FlxG.width - blackBar2.width;
 
-    for (a in [healTxt, whiteBG, whiteTxt, blackBar1, blackBar2]) a.camera = camHUD;
+    for (o in [blackBar1, blackBar2]) {
+        o.scrollFactor.set();
+        o.zoomFactor = 0;
+    }
 
     camFollow.setPosition(strumLines.members[curCameraTarget].characters[0].getCameraPosition().x, strumLines.members[curCameraTarget].characters[0].getCameraPosition().y);
     FlxG.camera.snapToTarget();
@@ -57,3 +63,6 @@ function postUpdate(e:Float) {
         }
     }
 }
+
+function onSubstateOpen(e) if (paused) camHUD.visible = false;
+function onSubstateClose(e) camHUD.visible = true;

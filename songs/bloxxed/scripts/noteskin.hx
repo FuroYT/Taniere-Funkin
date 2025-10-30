@@ -1,7 +1,7 @@
 import funkin.game.HudCamera;
 import funkin.backend.scripting.events.NoteHitEvent;
 
-public var daPixelZoom = 5;
+public var daPixelZoom = 6;
 
 function onNoteCreation(event) {
 	event.cancel();
