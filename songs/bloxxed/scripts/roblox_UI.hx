@@ -15,7 +15,7 @@ function postCreate() {
     healthBar.angle = 90;
     healthBar.scale.set(0.1725, 0.75);
 
-    add(healTxt = new FunkinSprite().loadGraphic(Paths.image("ui/healthtxt")));
+    add(healTxt = new FunkinSprite().loadGraphic(Paths.image("robloxui/healthtxt")));
     healTxt.x = 1025;
     healTxt.screenCenter(FlxAxes.Y);
     

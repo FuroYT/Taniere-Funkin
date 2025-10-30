@@ -1,13 +1,13 @@
-var impact = FlxG.sound.load(Paths.sound("rblx_dead"));
+var oof = FlxG.sound.load(Paths.sound("rblx_dead"));
 
 function create(e) {
     e.cancel();
     FlxG.cameras.add(camera = gameoverCam = new FlxCamera(), false);
     
-    add(ohno = new FlxSprite().loadGraphic(Paths.image("ui/ohnoes")));
+    add(ohno = new FlxSprite().loadGraphic(Paths.image("robloxui/ohnoes")));
     ohno.screenCenter();
 
-    impact.play();
+    oof.play();
 }
 
 function update() {
